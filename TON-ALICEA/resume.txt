@@ -10,3 +10,9 @@ Hi! I am minoDev and i am a Programmer.
 Services
 Web Development
 App Development
+
+Skills
+Drawing
+Imaginative crteation
+Programming
+Javascript
