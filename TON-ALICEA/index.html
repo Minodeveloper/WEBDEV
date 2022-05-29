@@ -3,16 +3,28 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles.css">
         <title>
            MinoDev Resume
         </title>
     </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#myskills">Skills</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#address">Address</a></li>
+        </ul>
+    </nav>
+
+    <main>
     <h1>My Resume</h1>
 
     <section>
         
-        <h2>Madhuresh(Minodev)</h2>
+        <h2 id="aboutme">Madhuresh(Minodev)</h2>
         <p>
         Coder, UX Designer, Graphics Programmer
         </p>
@@ -26,12 +38,12 @@
     </section>
     <article>
         <p>
-        Hi! I am minoDev and i am a Programmer.I love to program and creat beautiful things.<aside>Don't imitate , understand.</aside>
+        Hi! I am minoDev and i am a Programmer.I love to program and creat beautiful things.<aside lang="es">Don't imitate , understand.</aside>
         </p>
     </article>
 
     <section>
-    <h2>Services</h2>
+    <h2 id="services">Services</h2>
     <ul>
         <li> Web Development
             App Development
@@ -42,7 +54,7 @@
     </section>
 
     <section>
-        <h2>Skills</h2>
+        <h2 id="myskills">Skills</h2>
         <p>
         Drawing
         Imaginative crteation
@@ -56,7 +68,7 @@
     </section>
 
     <section>
-        <h2> Testimonials</h2>
+        <h2 id="reviews"> Testimonials</h2>
         <blockquote>
             <p>I love minodev's creations.</p>
         </blockquote>
@@ -67,13 +79,42 @@
     </section>
 
     <section>
-      <h2>Mailing address</h2>
+      <h2 id="address">Mailing address</h2>
       <address>
         111 Street India
         Villa 
       </address>
 
     </section>
+
+    <section id="contactme">
+        <h2>contact me</h2>
+        <form action="./dosomething.html">
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </p>
+        <p>
+            <label for="whycontacting">whycontacting</label>
+            <select id="whycontacting" name="whycontacting">
+                <option value="fun">FOR FUN</option>
+                <option value="jobs">jobs</option>
+            </select>
+        </p>
+        <p>
+            <label for="comments">comment:</label>
+            <textarea id="comments" name="comments" rows="4"> </textarea>
+        </p>
+            <button type="submit">send</button>
+
+        </form>
+    </section>
+
+</main>
 </body>
 
 </html>
