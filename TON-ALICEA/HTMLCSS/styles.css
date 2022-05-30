@@ -1,0 +1,10 @@
+[lang='es']{
+    font-weight: bold;
+}
+
+main{
+    margin-right: 100px;
+    margin-left: 100px;
+    outline: 2px solid ;
+    text-align: center;
+}
