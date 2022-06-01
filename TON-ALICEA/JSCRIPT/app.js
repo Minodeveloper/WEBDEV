@@ -1,11 +1,10 @@
+//closures
 
+function greet(message)
+{
+    return function(name){
+        console.log(`hello ${name} ${message}`);
+    }
+}
 
-// let myFun  = function (a,b)
-// {
-//     return a+b;
-// }
-
-// myFun.greet = "Hello !";
-
-// console.log(myFun);
-// console.log(myFun.greet);
+greet('kaise ho')('madhuresh');
