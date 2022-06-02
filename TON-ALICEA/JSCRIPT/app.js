@@ -1,10 +1,14 @@
-//closures
+//object oriented
 
-function greet(message)
+function objCreater(names, works)
 {
-    return function(name){
-        console.log(`hello ${name} ${message}`);
-    }
+    console.log(this)
+    this.name = names;
+    this.work = works;
+    console.log('invoked!')
 }
+objCreater.prototype.laugh = 'hahahah';
 
-greet('kaise ho')('madhuresh');
+let hoho = new objCreater('santa', 'hitler');
+
+console.log(hoho);
