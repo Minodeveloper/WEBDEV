@@ -1,14 +1,13 @@
-//object oriented
-
-function objCreater(names, works)
-{
-    console.log(this)
-    this.name = names;
-    this.work = works;
-    console.log('invoked!')
+function callback(){
+    console.log('I WILL RUN AFTER 2 SECIONDS');
 }
-objCreater.prototype.laugh = 'hahahah';
+setTimeout(function (){
+    console.log('HELLO AFTER 2 SECONDS');
+ 
+    setTimeout(function(){
+        console.log('O WILL RUN AFTER INN CALLFBACK');
 
-let hoho = new objCreater('santa', 'hitler');
+        setTimeout(function(){console.log('HAHAHAHA');}, 3000);
+},2000);
 
-console.log(hoho);
+}, 2000);
