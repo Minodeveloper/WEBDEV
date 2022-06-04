@@ -1,5 +1,18 @@
-let o = {x:1, y:{z:3}};
+// let b = []
+// for(let i = 0; i < 10; b[i++]=9);
+// console.log(b);
 
-console.log(o.x);
-console.log(o.y.z);
+let frequency = {};
 
+for(let letter of "mississippi")
+{
+    if(frequency[letter])
+    {
+        frequency[letter]++;
+    }
+    else{
+        frequency[letter] = 1;
+    }
+}
+
+console.log(frequency);
