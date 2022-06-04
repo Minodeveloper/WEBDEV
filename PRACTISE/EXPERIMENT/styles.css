@@ -1,0 +1,48 @@
+/* body
+{
+    font-size: 16px;
+}
+p{
+    font-size: 3em;
+} */
+
+div{
+    margin: 2px;
+    width: 80px;
+    height: 80px;
+    background-color: palegreen;
+    /* display: inline-block; */
+    border: 2px solid ;
+    box-sizing: border-box;
+    
+}
+section
+{
+    position: relative;
+}
+
+#box1{
+    background-color: plum;
+    overflow: hidden;
+    /* position: fixed; */
+    /* top: 0; */
+    /* right: 50vw; */
+    /* z-index: -1; */
+    
+   
+    
+
+}
+li{
+    list-style: none;
+    display: inline-block;
+    /* margin: auto; */
+    width: 100px;
+    background-color: aqua;
+}
+ul{
+    background-color: beige;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
