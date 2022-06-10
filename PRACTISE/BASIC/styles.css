@@ -24,7 +24,7 @@ h1{
     
 
 }
-p{
+p {
     
     /* background-color: bisque;
     border: solid;
@@ -65,4 +65,31 @@ img{
     display: inline-block;
     background-color: pink;
     float:left
+}
+
+.imAge{
+     width: 150px;
+     height:100px;
+     display: block;
+     margin: auto;
+
+
+}
+
+
+#flex{
+    background-color: aquamarine;
+    display: flex;
+    /* flex-direction: column; */
+
+    
+}
+
+#flex p{
+    border: solid 2px ;
+    font-size: 50px;
+    /* margin: auto; */
+}
+#flex p.ones{
+    order: 2;
 }
