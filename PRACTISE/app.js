@@ -1,22 +1,45 @@
-function twoSum(numbers, target) {
-    let array1 = [...numbers];
-    let array2 = [...numbers];
-     let sum =0;
-        for(let i = 0; i < array1.length;i++){
-             sum = 0;
-          for(let j = 1; j < array2.length; j++){
-             sum = array1[i] + array2[j];
-            //  console.log(j);
-            if(sum == target) return [numbers.indexOf(array1[i]),j];
-            // [array1[i],array2[j]];
-            
-          }
-        }
-    
-  }
-  console.log(twoSum([1,2,3], 4));
-  console.log(twoSum([1234,5678,9012], 14690));
-  console.log(twoSum([2,2,3], 4));
+
+{};
+
+function Vehicle (name, speed){
+    if(!new.target){
+        throw new Error('Nah! man not using new!');
+    }
+
+    this.name = name;
+    this.speed = speed;
+
+}
+
+
+let audi = new Vehicle('audiA8', 456)
+
+
+
+
+
+
+
+
+
+
+// const k = [{
+//     "mino":78,
+//     "hino":89
+// },
+// {
+//     l:23,
+//     h:123
+
+// }];
+
+// let Json = JSON.stringify(k);
+// console.log(Json);
+// console.log(JSON.parse(Json));
+
+// console.log();
+
+
 //   twoSum([1234,5678,9012], 14690);
 
 
