@@ -1,0 +1,2 @@
+hello world!
+I have come from server using AJAX!

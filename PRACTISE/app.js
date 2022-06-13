@@ -1,19 +1,6 @@
 
-{};
 
-function Vehicle (name, speed){
-    if(!new.target){
-        throw new Error('Nah! man not using new!');
-    }
-
-    this.name = name;
-    this.speed = speed;
-
-}
-
-
-let audi = new Vehicle('audiA8', 456)
-
+let XHR = new XMLHttpRequest();
 
 
 
