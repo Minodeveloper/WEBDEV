@@ -9,18 +9,18 @@ button.addEventListener('click', ()=>{
     // console.log( xhr);
     
     let method = 'GET';
-    let url = './message.txtz';
+    let url = './message.txt';
 
     xhr.open(method,url,true);
     // console.log('OPEN ', xhr.readyState);
 
-    xhr.onload = () =>{
-        console.log(xhr);
+    // xhr.onload = () =>{
+    //     console.log(xhr);
        
-    }
+    // }
 
-    xhr.onreadystatechange = ()=>{
-        if(xhr.readyState == 4 && xhr.status == 200){
+    xhr.onload = ()=>{
+        if( xhr.status == 200){
             document.write(xhr.response)
         }
         else{
