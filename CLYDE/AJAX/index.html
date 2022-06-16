@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        textarea{
+            margin-top: 1em;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+
+    <title>AJAX CHALLENGE</title>
+</head>
+<body>
+    <div>
+        <button id="success">Click to start XHR (success)</button>
+        <button id="error">Click to start XHR (error)</button>
+        <button id="abort">Click to start XHR (abort)</button>
+    </div>
+
+    <!-- output -->
+    <textarea class="log" readonly></textarea>
+
+    <script>
+        // lets grab relevant elements
+        const btnSuccess    = document.querySelector('#success');
+        const btnError      = document.querySelector('#error');
+        const btnAbort      = document.querySelector('#abort');
+        const log           = document.querySelector('.log');
+
+        function addListeners(xhr){
+            xhr.addEventListener('loadstart', handleEvent);
+
+
+            xhr.addEventListener('load', handleEvent);
+
+            xhr.addEventListener('loadend', handleEvent);
+
+            xhr.addEventListener('progress', handleEvent);
+
+            xhr.addEventListener('error', handleEvent);
+
+            xhr.addEventListener('abort', handleEvent);
+
+
+
+
+
+        }
+
+
+    </script>
+</body>
+</html>
