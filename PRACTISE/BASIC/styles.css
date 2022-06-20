@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
 
 
+
 #div1,#div2{
     width: 200px;
     /* height: 400px; */
@@ -16,7 +17,25 @@ img{
     
 }
 
+#flexContainer{
+    /* writing-mode: vertical-lr; */
 
+    /* width: 7em; */
+    border: solid;
+    font-size: 2em;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: space-between; */
+}
+#flexContainer p{
+    
+
+    /* margin-top: 0;
+    margin-bottom: 0; */
+    /* flex:1; */
+    
+}
 
 
 
