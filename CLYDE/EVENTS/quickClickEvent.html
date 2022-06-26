@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name Please<input type="text" id="name"> </label><br>
+    <label>
+        What is your favourite animal ?
+        <select id="animal">
+            <option value="dog">DOG</option>
+            <option value="warthog">WARTHOG</option>
+            <option value="cat">CAT</option>
+        </select>
+    </label>
+    <br>
+    <button id="button">SUBMIT</button>
+    <div id="message"></div>
+    
+
+    <script>
+        let button = document.querySelector('#button');
+
+        button.addEventListener('click', onButtonClick);
+
+        function onButtonClick() {
+            let message =  document.querySelector('#message');
+            let name = document.querySelector('#name').value;
+            let animal  = document.querySelector('#animal').value;
+
+            message.textContent = `Hi ${name}, Iwould love to have your ${animal}.Please!`;
+
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#container{
+    width: 60vw;
+    /* height: 10vw; */
+    background-color: cornflowerblue;
+    margin: auto;
+    border: 5px solid #53687E;
+    text-align: center;
+    padding: 1em;
+}
+
+div#nameInput , div#button{
+    margin:20px;
+    /* outline: 2px solid red; */
+    text-align: left;
+}
+
+button, label, #name{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label{
+    color: #fff;
+    margin-right: 20%;
+}
+
+#name{
+    background: transparent;
+    border: none;
+    border-bottom: 2px dashed powderblue;
+    outline: none;
+    color: bisque;
+    font-style: italic;
+}
+#name:focus{
+    border-bottom: 2px dashed greenyellow;
+}
+
+button{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+}
+button:hover{
+    background-color: aqua;
+}
+
+#output{
+    height: 1em;
+    /* border: 1px solid rgba(81, 174, 228, 0.445); */
+    /* border: white solid 1px; */
+    /* width: 50%; */
+    font-size: 1em;
+    color: #fff;
+    text-align: left;
+}
