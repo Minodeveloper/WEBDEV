@@ -53,6 +53,12 @@ img{
     flex: 1;
 }
 
+#quote{
+    width:50vw;
+    height: 30vh;
+    background-color: lightgreen;
+    margin-top: 20px;
+}
 
 
 
