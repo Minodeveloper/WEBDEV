@@ -16,6 +16,7 @@ nameText.addEventListener('input', ()=>{
 nameText.addEventListener('focus',(e)=>{
     e.target.style.background = 'lightblue';
     e.target.style.color = 'black';
+    console.log(e.timeStamp);
 
 
 })
