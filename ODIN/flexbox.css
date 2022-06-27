@@ -1,0 +1,30 @@
+div.container{
+    background-color: rgb(255, 127, 127);
+    outline: 2px solid grey;
+    width: 50vw;
+    height: 40px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+div.flex-child{
+    height: 40px;
+    width: 70px;
+    background-color: rgb(255, 220, 23);
+    outline: 1px solid blueviolet;
+    text-align: center;
+    
+    
+    
+}
+div#one{
+    background-color: red;
+    
+    /* flex: 1; */
+    /* background-color: transparent; */
+}
+div#two{
+    background-color: greenyellow;
+    /* flex: 1; */
+}
