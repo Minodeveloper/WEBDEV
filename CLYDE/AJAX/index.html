@@ -43,10 +43,17 @@
             xhr.addEventListener('abort', handleEvent);
 
 
-
-
-
         }
+
+        function handleEvent(e){
+            log.textContent = log.textContent + `${e.type}: ${e.loaded} bytes transferred\n`
+        }
+        btnSuccess.addEventListener('click', ()=>{
+            runXHR('http://openlibrary.org/search.json?q=the+lord+of+the+rings')
+        })
+        btnAbort.addEventListener('click', ()=>{
+            runXHR('http://i-am-fake')
+        })
 
 
     </script>

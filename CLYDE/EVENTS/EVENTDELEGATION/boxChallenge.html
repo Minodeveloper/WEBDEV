@@ -35,14 +35,17 @@
 
         function changeColor(e) {
             let target = e.target;
+            
             target.classList.add('highlight')
             highlight(target);
 
             function highlight(node){
                 if(selectedElement !== null){
+                   
                     selectedElement.classList.remove('highlight');
                 }
                     selectedElement = node;
+                   
                     selectedElement.classList.add('highlight')
                 
 
