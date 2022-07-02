@@ -35,9 +35,17 @@
 
         function changeColor(e) {
             let target = e.target;
+            if(target.tagName != 'TD')
+            {
+                return;
+            }
+            else{
+                highlight(target);
+
+            }
             
             target.classList.add('highlight')
-            highlight(target);
+            
 
             function highlight(node){
                 if(selectedElement !== null){
