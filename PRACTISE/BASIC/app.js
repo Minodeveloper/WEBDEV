@@ -1,6 +1,8 @@
 console.log('hello');
 
-
+// window.onload = function(){
+//     document.body.style.backgroundColor = 'red';
+// }
 let xhr  = new XMLHttpRequest();
 
 // console.log(xhr.readyState);

@@ -1,9 +1,14 @@
-let firstPromise = new Promise((resolve, reject)=>{
-    let animal  = 'warthog';
-    resolve(animal);
-}); 
+let url = "https://jsonplaceholder.typicode.com/todos/1";
 
-firstPromise.then((animal)=>{
-    console.log(animal);
-    console.log('DON!');
+
+
+fetch(url)
+.then((response)=>{
+
+    return response.json()
+
 })
+.then((data)=>{
+    console.log(data);
+})
+
