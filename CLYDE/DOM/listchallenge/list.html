@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./list.css">
+  
+    <title>LIST CHHALLENGE</title>
+</head>
+<body>
+    
+    <ul id="food">
+        <li>Meats
+            <ul>
+                <li>Red Meats
+                    <ul>
+                        <li>Beef</li>
+                        <li>Lamb</li>
+                        <li>Pork</li>
+                    </ul>
+                </li>
+                <li>Other
+                    <ul>
+                        <li>Fish</li>
+                        <li>Chicken</li>
+                        <li>Turkey</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </li>
+        
+
+        <li>Vegetables
+            <ul>
+                <li>Yummy ones
+                    <ul>
+                        <li>Potao</li>
+                        <li>Gobhi</li>
+                        <li>Peas</li>
+                    </ul>
+                </li>
+                <li>Yucky Ones
+                    <ul>
+                        <li>Mushroom</li>
+                        <li>Bhindi</li>
+                        <li>Karela</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <script>
+        let food = document.querySelector('#food');
+        food.addEventListener('click', showOrHide);
+
+
+        function showOrHide(e){
+            let target = e.target;
+
+            if(target.tagName == 'LI'){
+                let ulShoworHide = target.querySelector('ul');
+                if(ulShoworHide){
+                    ulShoworHide.classList.toggle('hide');
+
+                }
+            }
+
+        }
+
+    </script>
+</body>
+</html>

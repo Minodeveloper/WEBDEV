@@ -1,0 +1,35 @@
+body{
+    margin: 10px auto;
+    width: 450px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3{
+    padding-bottom: 0.3em;
+}
+p{
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+#delegation{
+
+}
+
+.box{
+    background-color: aquamarine;
+    padding: 10px 20px 10px;
+    border-top: 2px solid blue;
+    position: relative;
+}
+
+.remove{
+    position: absolute;
+    top:0;
+    right: 10px;
+    border: transparent;
+    color: blueviolet;
+    background-color: transparent;
+    font-size: 1.2em;
+    cursor: pointer;
+}
