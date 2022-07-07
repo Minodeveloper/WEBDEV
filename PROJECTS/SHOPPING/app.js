@@ -4,6 +4,7 @@ formAdd.addEventListener('submit', (e)=>{
     e.preventDefault();
 
     let text = formAdd.querySelector('input[type="text"]').value;
+    formAdd.querySelector('input[type="text"]').value= null
 
     let li          = document.createElement('li');
     let groceryName = document.createElement('span');
@@ -20,6 +21,8 @@ formAdd.addEventListener('submit', (e)=>{
     
     
     ul.appendChild(li);
+
+    
    
 })
 
@@ -57,4 +60,36 @@ checkbox.addEventListener('change', (e)=>{
     
 
     }
+})
+
+
+// SEARCH ITEMS/////////////
+
+
+const SEARCH = document.forms['search-item'].querySelector('input');
+
+SEARCH.addEventListener('keyup', (e)=>{
+    //grab user text
+    let text = e.target.value.toLowerCase();
+    
+
+    let groceryList = document.querySelector('#grocery-list ul');
+
+    let groceries = groceryList.getElementsByTagName('li');
+
+    let  groceriesArray = Array.from(groceries);
+
+    // lopp through groery item
+
+    groceriesArray.forEach((grocery)=>{
+        let groceryName = grocery.firstElementChild.textContent;
+        let groceryNameLower = groceryName.toLowerCase();
+
+        // text find in grocery name
+        if (groceryNameLower.indexOf(text)== -1){
+            grocery.style.display = 'none'
+        }else{
+            grocery.style.display = 'block'
+        }
+    })
 })

@@ -1,0 +1,51 @@
+body{
+    
+}
+
+body{
+    /* height: 100vh; */
+    background: url(./background.jpg) bottom center;
+}
+
+.keyboard-inputs{
+    margin: 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 auto;
+    height: 100vh;
+    /* outline: solid black; */
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+    
+}
+
+.keys{
+    border: solid;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    border-radius: .5rem;
+    
+}
+
+kbd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    display: block;
+    color: white;
+    
+}
+span{
+    display: block;
+    color: yellow;
+    font-size: .7em;
+    /* padding: 7px; */
+    letter-spacing: 3px;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
