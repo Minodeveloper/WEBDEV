@@ -16,6 +16,7 @@ window.addEventListener('keypress',(event)=>{
     try {
         let keys = document.querySelector(`#${event.key.toUpperCase()}`);
         let sounds = document.querySelector(`#${soundObj[event.key.toUpperCase()]}`)
+        sounds.currentTime = 0;
        sounds.play();
         
         if(keys !== null){
