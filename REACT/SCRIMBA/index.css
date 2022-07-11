@@ -1,0 +1,15 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color: powderblue;
+
+}
+
+p{
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+}
