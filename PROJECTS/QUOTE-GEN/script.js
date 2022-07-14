@@ -10,6 +10,7 @@ function tweetQuote()
 }
 
 function newQuote(){
+    
     const quoteText = document.querySelector('#quote');
     const authorText = document.querySelector('#author');
     let randomINDEX = Math.floor(Math.random() * 1600);
@@ -23,11 +24,12 @@ function newQuote(){
         currentTweet.author = apiQuotes[randomINDEX].author;
         authorText.textContent = apiQuotes[randomINDEX].author;
     }
-
+   
  }
 
 
 async function getQuotes(){
+    
     const apiURL = "https://type.fit/api/quotes";
 
     try{
@@ -47,3 +49,19 @@ const tweetBtton = document.querySelector('#twitter');
 const quoteButton = document.querySelector('#new-quote');
 quoteButton.addEventListener('click', newQuote);
 tweetBtton.addEventListener('click', tweetQuote);
+
+// quote container
+
+const quoteContainer = document.querySelector('#quote-container');
+const loader = document.querySelector('#loader');
+
+// function loading() {
+//     loader.hidden = false;
+//     quoteContainer.hidden = true;
+//   }
+  
+//   // Remove Loading Spinner
+//   function complete() {
+//     quoteContainer.hidden = false;
+//     loader.hidden = true;
+//   }
