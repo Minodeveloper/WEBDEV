@@ -29,20 +29,41 @@
     
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
-    console.log(inventors.filter(x=>{return x.year > 1500 && x.year < 1600}));
+    const fifteen = inventors.filter(x=>{return x.year > 1500 && x.year < 1600});
+    console.table(fifteen);
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
-    console.log(inventors.map(x=> {
+    console.table(inventors.map(x=> {
         return x.first +" "+ x.last
     }))
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+   console.table( inventors.sort(sorter));
+
+    function sorter(a,b){
+      if(a.year > b.year){
+        return 1
+      }else{
+        return -1
+      }
+
+    }
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
-    console.log(inventors.map(x=>{return x.passed-x.year}).reduce((a,b)=>{return a+b},0))
+    console.log(inventors.map(x=>{return x.passed-x.year}).reduce((a,b)=>{return a+b},0)+ " years")
 
     // 5. Sort the inventors by years lived
+    console.table( inventors.sort(sorter2));
+
+    function sorter2(a,b){
+      if((a.passed - a.year) > (b.passed - b.year)){
+        return 1
+      }else{
+        return -1
+      }
+
+    }
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
@@ -50,7 +71,17 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+     let so =  people.sort(sorter3);
 
+      function sorter3(people1, people2){
+        const [last1, first1] =  people1.split(', ');
+        const [last2, first2] =  people2.split(', ');
+
+        return last1<last2?-1:1;
+
+
+      }
+      console.log(so);
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
